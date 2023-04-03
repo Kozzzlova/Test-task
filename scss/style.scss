@@ -1,0 +1,73 @@
+@import "_null";
+@import "_fonts";
+@import "_header";
+@import "__subheader";
+@import "_banner";
+@import "_advantage";
+@import "_categories";
+@import "_about";
+@import "_questions";
+@import "_footer";
+
+
+body {
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 18px;
+    height: 125%;
+    color: #1E2E36;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1848px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-block {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #44C697;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+        background-color: #60b6b6;
+    }
+}
+
+.title-block {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    &::before {
+        content: '';
+        display: block;
+        background-color: #44C697;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 50px;
+        z-index: -1;
+    }
+}

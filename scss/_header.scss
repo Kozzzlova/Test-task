@@ -1,0 +1,131 @@
+.header {
+    border-bottom: 1px solid rgba(30, 46, 54, 0.6);
+
+		// .header__container
+
+		&__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18.5px 0;
+            font-weight: 700;
+		}
+
+		// .header__contact
+
+		&__contact {
+            display: flex;
+            align-items: center;
+		}
+
+		// .header__nav
+
+		&__nav {
+           
+		}
+}
+
+.contact-head {
+
+		// .contact-head__social
+
+		&__social {
+             display: flex;
+            align-items: center;
+		}
+
+		// .contact-head__mobile
+
+		&__mobile {
+             display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+}
+.social-head {
+    margin-right: 51px;
+
+		// .social-head__title
+
+		&__title {
+            
+		}
+
+		// .social-head__icons
+
+		&__icons {
+             display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+
+		// .social-head__item
+
+		&__item {
+            margin: 0 15px;
+
+           
+		}
+}
+.mobile-head {
+
+		// .mobile-head__icon
+
+		&__icon {
+		}
+
+		// .mobile-head__number
+
+		&__number {
+            margin: 0 10px;
+		}
+
+		// .mobile-head__arrow
+
+		&__arrow {
+		}
+}
+.nav-head {
+
+		// .nav-head__list
+
+		&__list {
+             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-transform: uppercase;
+            margin: 0 -7.5px;
+		}
+
+		// .nav-head__item
+
+		&__item {
+            margin: 0 7.5px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -7x;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: #44C697;
+                display: block;
+                transition: all 0.3s ease 0s;
+            }
+
+          &:hover::after {
+            width: 100%;
+          }
+           
+
+      
+
+            
+		}
+}
+
+// .nav-head__item:hover .nav-head__item:after   {
+//    display: block;
+// }
